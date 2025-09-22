@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# REACT-FORM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una práctica para aprender los fundamentos de React, aplicar estilos con Bootstrap y realizar validaciones dinámicas en formularios. A continuación se describe la estructura de las sesiones y cómo instalar el proyecto.
 
-## Available Scripts
+## Instalación
 
-In the project directory, you can run:
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/mikeljair/REACT-FORM.git
+   cd REACT-FORM
+   ```
 
-### `npm start`
+2. **Instala las dependencias:**
+   ```bash
+   npm install
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Instala Bootstrap:**
+   ```bash
+   npm install bootstrap
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Importa los estilos de Bootstrap en `src/index.js`:**
+   ```javascript
+   import 'bootstrap/dist/css/bootstrap.min.css';
+   ```
 
-### `npm test`
+## Estructura de las sesiones
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Sesión 1 (1h) – Introducción a React
 
-### `npm run build`
+- Crear el proyecto con `npx create-react-app formulario-react`.
+- Estructurar componentes básicos en `App.js`.
+- Crear un formulario con inputs para **Nombre**, **Correo** y **Contraseña**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Sesión 2 (1h) – Estilos con framework CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Instalar e importar Bootstrap.
+- Aplicar clases de Bootstrap (`form-control`, `btn`, `container`) a los componentes del formulario.
+- Hacer que el formulario sea responsivo usando el sistema de grid de Bootstrap.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Sesión 3 (1h) – Validaciones dinámicas en React
 
-### `npm run eject`
+- Utilizar `useState` para controlar los valores de los inputs.
+- Validar en tiempo real:
+  - El correo debe tener un formato válido.
+  - La contraseña debe tener al menos 8 caracteres.
+- Mostrar mensajes de error dinámicos debajo de cada campo cuando la validación falle.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Ejecución
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para iniciar el proyecto en modo desarrollo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Esto abrirá la aplicación en `http://localhost:3000`.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Listo! Ya puedes comenzar con la práctica y aprender los conceptos esenciales de React, Bootstrap y validaciones dinámicas.
