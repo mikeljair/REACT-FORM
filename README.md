@@ -1,62 +1,130 @@
 # REACT-FORM
 
-Este proyecto es una práctica para aprender los fundamentos de React, aplicar estilos con Bootstrap y realizar validaciones dinámicas en formularios. A continuación se describe la estructura de las sesiones y cómo instalar el proyecto.
+Este proyecto es una aplicación simple en React que implementa un formulario con validaciones en tiempo real, utilizando Bootstrap para los estilos y la responsividad.
 
-## Instalación
+## Tabla de contenidos
 
-1. **Clona el repositorio:**
-   ```bash
-   git clone https://github.com/mikeljair/REACT-FORM.git
-   cd REACT-FORM
-   ```
-
-2. **Instala las dependencias:**
-   ```bash
-   npm install
-   ```
-
-3. **Instala Bootstrap:**
-   ```bash
-   npm install bootstrap
-   ```
-
-4. **Importa los estilos de Bootstrap en `src/index.js`:**
-   ```javascript
-   import 'bootstrap/dist/css/bootstrap.min.css';
-   ```
-
-## Estructura de las sesiones
-
-### Sesión 1 (1h) – Introducción a React
-
-- Crear el proyecto con `npx create-react-app formulario-react`.
-- Estructurar componentes básicos en `App.js`.
-- Crear un formulario con inputs para **Nombre**, **Correo** y **Contraseña**.
-
-### Sesión 2 (1h) – Estilos con framework CSS
-
-- Instalar e importar Bootstrap.
-- Aplicar clases de Bootstrap (`form-control`, `btn`, `container`) a los componentes del formulario.
-- Hacer que el formulario sea responsivo usando el sistema de grid de Bootstrap.
-
-### Sesión 3 (1h) – Validaciones dinámicas en React
-
-- Utilizar `useState` para controlar los valores de los inputs.
-- Validar en tiempo real:
-  - El correo debe tener un formato válido.
-  - La contraseña debe tener al menos 8 caracteres.
-- Mostrar mensajes de error dinámicos debajo de cada campo cuando la validación falle.
-
-## Ejecución
-
-Para iniciar el proyecto en modo desarrollo:
-
-```bash
-npm start
-```
-
-Esto abrirá la aplicación en `http://localhost:3000`.
+- [Introducción](#introducción)
+- [Características](#características)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Autor](#autor)
 
 ---
 
-¡Listo! Ya puedes comenzar con la práctica y aprender los conceptos esenciales de React, Bootstrap y validaciones dinámicas.
+## Introducción
+
+Este proyecto fue desarrollado como práctica para aprender los fundamentos de React, la integración de Bootstrap para estilos y la implementación de validaciones dinámicas en formularios.
+
+Las principales funcionalidades incluyen:
+
+- Formulario con inputs de Nombre, Correo y Contraseña.
+- Validaciones dinámicas usando React hooks.
+- Estilos y responsividad usando Bootstrap.
+
+---
+
+## Características
+
+- **Formulario React:** Inputs de nombre, correo y contraseña.
+- **Validaciones en tiempo real:** 
+  - Correo con formato válido.
+  - Contraseña con mínimo 8 caracteres.
+  - Mensajes de error dinámicos bajo cada campo.
+- **Estilos con Bootstrap:** Formulario responsivo y estilizado usando clases como `form-control`, `btn`, y `container`.
+
+---
+
+## Instalación
+
+Sigue estos pasos para instalar y ejecutar el proyecto localmente:
+
+1. **Clona el repositorio:**
+
+    ```bash
+    git clone https://github.com/mikeljair/REACT-FORM.git
+    cd REACT-FORM
+    ```
+
+2. **Instala las dependencias:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Instala Bootstrap:**
+
+    ```bash
+    npm install bootstrap
+    ```
+
+4. **Importa Bootstrap en el proyecto:**
+
+    En el archivo `src/index.js`, agrega la siguiente línea al inicio:
+
+    ```javascript
+    import 'bootstrap/dist/css/bootstrap.min.css';
+    ```
+
+5. **Ejecuta la aplicación:**
+
+    ```bash
+    npm start
+    ```
+
+La aplicación se ejecutará en [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Uso
+
+Al abrir la aplicación, verás un formulario con los siguientes campos:
+
+- Nombre
+- Correo
+- Contraseña
+
+Completa los campos y observa las validaciones en tiempo real:
+
+- El campo de correo debe tener un formato válido.
+- La contraseña debe tener al menos 8 caracteres.
+- Los mensajes de error se muestran dinámicamente bajo cada campo si el valor no es válido.
+
+---
+
+## Estructura del proyecto
+
+```text
+REACT-FORM/
+├── node_modules/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.js         # Componente principal y formulario
+│   ├── index.js       # Punto de entrada, importa Bootstrap
+│   └── ...            # Otros componentes y archivos
+├── package.json
+└── README.md
+```
+
+---
+
+## Tecnologías utilizadas
+
+- [React](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+
+---
+
+## Autor
+
+- **mikeljair**  
+  [GitHub](https://github.com/mikeljair)
+
+---
+
+## Licencia
+
+Este proyecto es solo para fines educativos.
